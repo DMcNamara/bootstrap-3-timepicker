@@ -604,7 +604,14 @@
       if (this.showMeridian) {
         arr = time.split(' ');
         timeArray = arr[0].split(':');
-        this.meridian = arr[1];
+
+        if (arr[1] !== undefined) {
+          this.meridian = arr[1];
+        } else if (time.toLowerCase().indexOf('a') > 0) {
+          this.meridian = 'AM';
+        } else if (time.toLowerCase().indexOf('p') > 0) {
+          this.meridian = 'PM';
+        }
       } else {
         timeArray = time.split(':');
       }
