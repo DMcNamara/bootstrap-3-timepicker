@@ -62,7 +62,7 @@
   border-radius: 4px;
 }
 .bootstrap-timepicker-widget table {
-  width: 100%;
+  width: 200px;
   margin: 0;
 }
 .bootstrap-timepicker-widget table td {
@@ -120,6 +120,7 @@
   }
 }
 
+/* Wymsee Custom Rules */
 .bootstrap-timepicker-widget > table tbody > tr > td {
   border-top: 0px none;
 }
